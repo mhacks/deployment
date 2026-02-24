@@ -1,17 +1,11 @@
-mhacks.com, www.mhacks.com {
-	redir https://www.mhacks.org
-}
-
-mhacks.org {
-	redir https://www.mhacks.org
+mhacks.com, mhacks.org, www.mhacks.com {
+	redir https://www.mhacks.org{uri}
 }
 
 www.mhacks.org {
-	reverse_proxy https://mhacks25-landing-site.vercel.app {
-		header_up Host {upstream_hostport}
-	}
+	reverse_proxy localhost:3000
 }
 
 team.mhacks.org {
-	redir https://mhacks.super.site/
+	redir https://mhacks.super.site{uri}
 }
