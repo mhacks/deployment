@@ -3,7 +3,7 @@ mhacks.com, mhacks.org, www.mhacks.com {
 }
 
 www.mhacks.org {
-	reverse_proxy localhost:3000
+	reverse_proxy transition-site:3000
 }
 
 team.mhacks.org {
